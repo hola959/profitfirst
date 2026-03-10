@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganancia es Primero Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a class="logo" href="#">💰 Ganancia Primero Hub</a>
+        <div class="nav-links">
+          <a href="#calculadora">Calculadora</a>
+          <a href="#bancos">Bancos</a>
+          <a href="#plan">Plan 90 días</a>
+          <a href="#recursos">Recursos</a>
+        </div>
+      </nav>
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Para fans de <strong>La Ganancia es Primero</strong></p>
+          <h1>Convierte tus ingresos en un sistema simple, sano y sostenible.</h1>
+          <p>
+            Esta web te ayuda a implementar Profit First paso a paso: porcentajes guía,
+            asignaciones automáticas, calendario de hábitos, métricas y plantillas listas para usar.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#calculadora">Empezar ahora</a>
+            <a class="btn btn-secondary" href="#plan">Ver plan de implementación</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Ritual quincenal rápido</h2>
+          <ol>
+            <li>Revisar Ingresos Reales (últimos 15 días)</li>
+            <li>Transferir a cuentas según porcentajes</li>
+            <li>Pagar OPEX solo desde su cuenta</li>
+            <li>Registrar KPIs clave</li>
+            <li>Cerrar con retrospectiva de 10 min</li>
+          </ol>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section id="calculadora" class="section container">
+        <div class="section-head">
+          <h2>Calculadora Profit First</h2>
+          <p>
+            Introduce tu ingreso mensual y personaliza los porcentajes para obtener un plan instantáneo.
+          </p>
+        </div>
+
+        <div class="calculator-grid">
+          <form id="profit-form" class="card form-card">
+            <label>
+              Ingreso mensual (€)
+              <input type="number" id="income" min="0" step="0.01" value="10000" required />
+            </label>
+
+            <div class="percent-grid">
+              <label>Ganancia (%) <input type="number" id="profit" min="0" max="100" value="10" /></label>
+              <label>Salario dueño (%) <input type="number" id="owner" min="0" max="100" value="35" /></label>
+              <label>Impuestos (%) <input type="number" id="tax" min="0" max="100" value="15" /></label>
+              <label>Gastos operativos (%) <input type="number" id="opex" min="0" max="100" value="40" /></label>
+            </div>
+
+            <p id="validation-message" class="validation"></p>
+            <button type="submit" class="btn btn-primary">Calcular distribución</button>
+          </form>
+
+          <div class="card results-card">
+            <h3>Distribución sugerida</h3>
+            <ul id="result-list"></ul>
+            <p class="mini">Tip: haz las transferencias 2 veces al mes para crear disciplina.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="bancos" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Sistema de 5 cuentas bancarias</h2>
+            <p>La separación física del dinero elimina decisiones impulsivas.</p>
+          </div>
+          <div class="account-grid">
+            <article class="card">
+              <h3>💳 Ingresos</h3>
+              <p>Cuenta puente donde entra todo el dinero antes de distribuirlo.</p>
+            </article>
+            <article class="card">
+              <h3>📈 Ganancia</h3>
+              <p>Reserva estratégica y premio por gestionar bien el negocio.</p>
+            </article>
+            <article class="card">
+              <h3>👤 Salario del dueño</h3>
+              <p>Tu sueldo real como operador de la empresa.</p>
+            </article>
+            <article class="card">
+              <h3>🏛️ Impuestos</h3>
+              <p>Protege el flujo de caja para obligaciones fiscales.</p>
+            </article>
+            <article class="card">
+              <h3>⚙️ OPEX</h3>
+              <p>Todos los gastos del negocio salen solo de esta cuenta.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="plan" class="section container">
+        <div class="section-head">
+          <h2>Plan de implementación en 90 días</h2>
+          <p>Usa este roadmap para adoptar el sistema sin estrés.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item card">
+            <h3>Días 1-15 · Fundaciones</h3>
+            <ul>
+              <li>Abrir cuentas y definir porcentajes iniciales.</li>
+              <li>Configurar transferencias quincenales en calendario.</li>
+              <li>Crear tablero simple de KPIs.</li>
+            </ul>
+          </article>
+          <article class="timeline-item card">
+            <h3>Días 16-45 · Ejecución</h3>
+            <ul>
+              <li>Hacer 2-4 ciclos de asignación de ingresos.</li>
+              <li>Detectar gastos a recortar del OPEX.</li>
+              <li>Actualizar porcentajes ±1% cada 2 semanas.</li>
+            </ul>
+          </article>
+          <article class="timeline-item card">
+            <h3>Días 46-90 · Optimización</h3>
+            <ul>
+              <li>Establecer meta de ganancia trimestral.</li>
+              <li>Automatizar reportes mensuales.</li>
+              <li>Definir política de reparto de beneficios.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="recursos" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Toolkit para fans avanzados</h2>
+          </div>
+          <div class="resources-grid">
+            <article class="card">
+              <h3>Checklist quincenal</h3>
+              <ul class="checklist" id="checklist">
+                <li><label><input type="checkbox" /> Registrar ingresos del periodo</label></li>
+                <li><label><input type="checkbox" /> Ejecutar transferencias por porcentaje</label></li>
+                <li><label><input type="checkbox" /> Pagar facturas críticas desde OPEX</label></li>
+                <li><label><input type="checkbox" /> Revisar margen real y ajustar</label></li>
+              </ul>
+              <button id="reset-checklist" class="btn btn-secondary">Reiniciar checklist</button>
+            </article>
+
+            <article class="card">
+              <h3>KPIs recomendados</h3>
+              <table>
+                <thead>
+                  <tr><th>KPI</th><th>Meta sugerida</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>% Ganancia real</td><td>&gt; 10%</td></tr>
+                  <tr><td>% OPEX</td><td>&lt; 50%</td></tr>
+                  <tr><td>Runway caja</td><td>3-6 meses</td></tr>
+                  <tr><td>Ciclos quincenales cumplidos</td><td>100%</td></tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="card">
+              <h3>Frases clave del método</h3>
+              <blockquote>
+                “La disciplina financiera no empieza con más ingresos,
+                empieza con un sistema que respeta tus prioridades.”
+              </blockquote>
+              <p>Úsala como recordatorio en tu equipo cada semana.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Hecho para emprendedores hispanohablantes que aman el enfoque de
+          <strong>La Ganancia es Primero</strong>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
